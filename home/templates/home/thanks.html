@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS -->
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'home/css/bootstrap.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'home/fonts/Geometria/stylesheet.css' %}" />
+    <link rel="stylesheet" href="{% static 'home/css/style.css' %}" />
+    <link rel="shortcut icon" href="{% static 'home/img/favicon.ico' %}" type="image/x-icon" />
+
+    <title>Завка отправлена</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="{% url 'home-page' %}">
+            {% load static %}
+                <img src="{% static 'home/img/DecorEx2.png' %}" alt="logo" />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link px-4" href="{% url 'home-page' %}">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-4" href="{% url 'about-page' %}">О нас</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-4" href="{% url 'projects-page' %}">Проекты</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-4" href="{% url 'contact-page' %}">Контакты</a>
+                    </li>
+                </ul>
+                <button class="btn btn-warning my-2 my-sm-0 px-4">
+                    <a class="btn_link" href="#contact">Оставить заявку</a>                    
+                </button>
+            </div>
+        </div>
+    </nav>
+
+
+<div class="container my-5">
+    <div class="text-center pb-5 pt-5">
+        <h1 class="title_block">Благодарим за отправку заявки</h1>
+        <!-- <img src="{% static 'home/img/ret1.png' %}" alt="ret" width="250px" /> -->
+    </div>
+    <div class="text_thanks text-center">
+        <div class="container">
+            <h4>Наши специалисты в ближайшее время свяжуться с вами</h4>
+        </div>
+    </div>
+    <div class="link_main my-5 pb-5">
+        <div class="container pt-5 text-center">
+            <h4><a href="{% url 'home-page' %}">вернуться на главную</a></h4>
+        </div>
+    </div>
+</div>
+
+
+
+    <!--FOOTER-->
+    <footer class="mt-5">
+            <div class="container text-white footer1 pt-3">
+              <div class="row">
+                <div class="py-3 col-lg-3 d-flex flex-column justify-content-between">
+                  <p><a href="tel:+73952900420"><img class="pr-2" src="{% static 'home/img/icon_phone_white.png' %}" alt="phone_white">8 (3952) 900-420</a></p>
+                  <p><img class="pr-2" src="{% static 'home/img/icon_clock_white.png' %}" alt="colck_white">С 9:00 до 18:00<br>(сб, вскр выходной)</p>
+                  <p><img class="pr-2" src="{% static 'home/img/icon_pin.png' %}" alt="pin">г. Иркутск</p>
+                </div>
+                <div class="col-lg-3">
+                </div>
+                <div class="col-lg-6 d-flex flex-column justify-content-around align-items-center">
+                  <div>
+                  <a class="px-2" href="#"><img src="{% static 'home/img/icon_ok.png' %}" alt="ok"></a>
+                  <a class="px-2" href="#"><img src="{% static 'home/img/icon_facebook.png' %}" alt="ok"></a>
+                  <a class="px-2" href="#"><img src="{% static 'home/img/icon_instagram.png' %}" alt="ok"></a>
+                  <a class="px-2" href="#"><img src="{% static 'home/img/icon_vk.png' %}" alt="ok"></a>
+                </div>
+                <div class="py-4">
+                        <a href="https://www.instagram.com/ianfox.traveller/?hl=ru"><p class="">Design by @ianfox.traveller Instagram</p></a>
+                </div>
+                </div>
+              </div>
+            </div>
+          </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

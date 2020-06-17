@@ -1,0 +1,46 @@
+{% extends 'home/main.html' %}
+{% block description %}DecorEx (Декорекс) - Камины. Скульптуры. Ручная работа{% endblock description %}
+{% block keywords %}Decorex. Декрорекс. Камины. Скульптуры. Ручная работа. Иркутск{% endblock keywords %}
+{% block title %}DecorEx - наши проекты{% endblock title %}
+{% block index_block %}
+<div class="container my-5">
+
+{% if pub_projects %}
+    {% for a in pub_projects %}
+        <div class="container forth_block">
+                <div class="row">
+                    <div class="col-lg-5 mt-5">
+                        <img src="{{ a.picture.url }}" alt="img">
+                    </div>
+                    <div class="col-lg-7 mt-5 d-flex flex-column justify-content-center">
+                        <h4 class="">{{a.title}}</h4>
+                        <h5 class="py-5">{{a.description}}</h5>
+                        <p>{{a.characteristic}}</p>
+                    </div>
+                </div>
+        </div>
+    {% endfor %}
+{% endif %}
+
+<div class="container mt-5">
+<div class="text-center pb-5">
+        <h1 class="title_block">Фото проектов</h1>
+        {% load static %}
+        <img src="{% static 'home/img/ret1.png' %}" alt="ret" width="250px" />
+    </div>
+    <div class="container">
+        <div class="row">
+        {% if photo_projects %}
+        {% for photo in photo_projects %}
+                    <div class="col-lg-3 mx-0 px-0">
+                    <img width="100%" class="photo_projects" src="{{ photo.picture.url }}" alt="img">
+                    </div>
+        {% endfor %}
+        {% endif %}
+        </div>
+    </div>
+
+
+</div>
+</div>
+{% endblock index_block %}

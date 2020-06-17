@@ -1,0 +1,199 @@
+{% extends 'home/main.html' %}
+{% block description %}DecorEx (Декорекс) - Камины. Скульптуры. Ручная работа{% endblock description %}
+{% block keywords %}Decorex. Декрорекс. Камины. Скульптуры. Ручная работа. Иркутск{% endblock keywords %}
+{% block title %}DecorEx - Главная{% endblock title %}
+    {% block index_block %}
+    <!--MAIN BLOCK-->
+
+    <div class="main_block pb-5">
+        <div class="container main_block_inside d-flex flex-column align-items-center justify-content-around">
+            <div class="logo_main">
+            {% load static %}
+                <img src="{% static 'home/img/DecorEx6.png' %}" alt="logo" />
+            </div>
+            <div class="title_main text-center mb-5">
+                <h2 class="pb-3">
+Любой проект в архитектуре Доверить нужно Декорекс<br> Всё - от камина до скульптуры                </h2>
+                <h2 class="pb-3">
+                    Для отдыха и для культуры Вам изготовит Декорекс
+                </h2>
+            </div>
+            <div class="button_main my-5">
+                <button class="btn btn-warning my-2 my-sm-0 px-4">
+                        <a class="btn_link" href="#contact">Оставить заявку</a>   
+                </button>
+            </div>
+        </div>
+    </div>
+    <!--END MAIN BLOCK-->
+    <!--SECOND BLOCK-->
+    <div class="second_block pt-5">
+        <div class="container pt-4 text-center">
+            <div class="text-center pb-5">
+                <h1 class="title_block">Декорекс</h1>
+                <img src="{% static 'home/img/ret1.png' %}" alt="ret" width="250px" />
+            </div>
+            <div class="row sec_img pt-5">
+                <div class="col-lg-4">
+                    <img src="{% static 'home/img/f1.png' %}" alt="f1" />
+                    <h4 class="py-3">Индивидуальные эскизы</h4>
+                    <p class="pb-5">Проекты по индивидуальным эскизам под любой интерьер, ландшафт</p>
+                </div>
+                <div class="col-lg-4">
+                    <img src="{% static 'home/img/f2.png' %}" alt="f2" />
+                    <h4 class="py-3">Ручная работа</h4>
+                    <p class="pb-5">Только ручная работа – даёт возможность сделать каждый проект уникальным, неповторимым</p>
+                </div>
+                <div class="col-lg-4">
+                    <img src="{% static 'home/img/f3.png' %}" alt="f3" />
+                    <h4 class="py-3">Под ключ</h4>
+                    <p class="pb-5">Гарантируем выполнение работ в утвержденные сроки «под ключ»</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--END SECOND BLOCK-->
+    <!--FORTH BLOCK-->
+    <div class="pt-5">
+        <div class="container pt-4">
+            <div class="text-center pb-5">
+                <h1 class="title_block pb-2">Наши проекты</h1>
+                <img src="{% static 'home/img/ret1.png' %}" alt="ret" width="250px" />
+            </div>
+            <div class="container forth_block">
+                <div class="row">
+                    <div class="col-lg-5 mt-5">
+                        <img src="{% static 'home/img/p1.png' %}" alt="p1">
+                    </div>
+                    <div class="col-lg-7 mt-5 d-flex flex-column justify-content-center">
+                        <h4 class="">Барельеф</h4>
+                        <h5 class="py-5">Настенный барельеф из гипса.</h5>
+                        <p>Потрясающий барельеф в греческом стиле. Колонны и сам барельеф сделаны из гипса. Вот такой барельеф, невероятной красоты, мы сделали всего за месяц.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-7 col-sm-12 mt-5 d-flex flex-column justify-content-center a_r">
+                        <h4>Камин</h4>
+                        <h5 class="py-5">Красивый камин с уникальной отделкой.</h5>
+                        <p>Как и все остальные проекты, камин выполнен по индивидуальному проекту. Камин сделан из огнеупорного шамотного кирпича. Ручная резка и имитация под мрамор придает ему благородный вид. Нашим специалистам пришлось использовать недорогие материалы, но даже в таких условиях мы делаем вещи, которые выглядят очень дорого.</p>
+                    </div>
+                    <div class="col-lg-5 col-sm-12 order-first order-sm-first order-lg-last mt-5">
+                        <img src="{% static 'home/img/p2.png' %}" alt="p2">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-5 mt-5">
+                        <img src="{% static 'home/img/p3.png' %}" alt="p3">
+                    </div>
+                    <div class="col-lg-7 mt-5 d-flex flex-column justify-content-center">
+                        <h4>Тандыр</h4>
+                        <h5 class="py-5">Тандыр для домашнего (дачного) и для профессионального производства лепешек (лавашей) и самсы. А также шашлыка, овощных и мясных блюд.</h5>
+                        <p>Построен из шамотного кирпича и глины. Отделан мозайкой, которая придает ему благородный вид. Размеры: 120*95. Производство такого красавца занимает примерно 15 дней.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-7 col-sm-12 mt-5 d-flex flex-column justify-content-center a_r">
+                        <h4>Камин</h4>
+                        <h5 class="py-5">Английский камин.</h5>
+                        <p>Отличный камин с повышенной теплоотдачей. Сделан из шамотного кирпича и шамотной глины. Отделан газобетоном и гранитом. Камин выглядит очень современно и стильно. Его лаконичный дизайн идеально вписывается в интерьер. Хороший пример того, как камин гармонично смотрится в современном дизайне интерьера. Срок выполнения: 30 дней.</p>
+                    </div>
+                    <div class="col-lg-5 col-sm-12 order-first order-sm-first order-lg-last mt-5">
+                        <img src="{% static 'home/img/p4.png' %}" alt="p4">
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+    <!--END FORTH BLOCK-->
+    <div class="margin-8 d-none d-lg-block"></div>
+    <!--5 BLOCK-->
+<!--    <div class="container-fluid block_5 mt-5">-->
+<!--        <div class="container">-->
+<!--            <div class="row text-center py-5">-->
+<!--                <div class="col-lg-1"></div>-->
+<!--                <div class="col-lg-2">-->
+<!--                    <h2>552</h2>-->
+<!--                    <p>Реализованных проекта</p>-->
+<!--                </div>-->
+<!--                <div class="col-lg-2">-->
+<!--                    <h2>20</h2>-->
+<!--                    <p>Лет в этой сфере</p>-->
+<!--                </div>-->
+<!--                <div class="col-lg-2">-->
+<!--                    <h2>99</h2>-->
+<!--                    <p>Процентов клиентов нас рекомендуют</p>-->
+<!--                </div>-->
+<!--                <div class="col-lg-2">-->
+<!--                    <h2>540</h2>-->
+<!--                    <p>Довольных клиентов</p>-->
+<!--                </div>-->
+<!--                <div class="col-lg-2">-->
+<!--                    <h2>5</h2>-->
+<!--                    <p>Проектов в среднем реализуем в месяц</p>-->
+<!--                </div>-->
+<!--                <div class="col-lg-1"></div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+    <!--END 5 BLOCK-->
+
+    <!--THIRD BLOCK-->
+    <div class="third_block pt-5">
+        <div class="container pt-4 text-center">
+            <div class="text-center pb-5">
+                <h1 class="title_block pb-2">Декорекс</h1>
+                <img src="{% static 'home/img/ret1.png' %}" alt="ret" width="250px" />
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 pt-4">
+                    <div class="container third_card pt-3">
+                        <img src="{% static 'home/img/1your.png' %}" alt="c1">
+                        <h4 class="py-3">Возможности</h4>
+                        <p class="pb-5">Профессионально реализуем любые самые смелые фантазии. Эскизы по картинке или фотографии.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 pt-4">
+                    <div class="container third_card pt-3">
+                        <img src="{% static 'home/img/2conf.png' %}" alt="c2">
+                        <h4 class="py-3">Конфиденциальность</h4>
+                        <p class="pb-5">Гарантируем сохранение любой информации о клиентах в рамках закона.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 pt-4">
+                    <div class="container third_card pt-3">
+                        <img src="{% static 'home/img/3all.png' %}" alt="c3">
+                        <h4 class="py-3">Творчество</h4>
+                        <p class="pb-5">От готики до модерна – каждый проект, как произведение искусства.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 pt-4">
+                    <div class="container third_card pt-3">
+                        <img src="{% static 'home/img/4mat.png' %}" alt="c4">
+                        <h4 class="py-3">Разные материалы</h4>
+                        <p class="pb-5">Уникальность каждого проекта  подчеркивает выбор материала. От штукатурки и гипса, до  гранита и мрамора.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 pt-4">
+                    <div class="container third_card pt-3">
+                        <img src="{% static 'home/img/5constr.png' %}" alt="c5">
+                        <h4 class="py-3">Сопровождение на этапе строительства</h4>
+                        <p class="pb-5">Обеспечим сопровождение и устройство площадки для камина, барельефа или зоны
+                            барбекю при строительстве дома</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 pt-4">
+                    <div class="container third_card pt-3">
+                        <img src="{% static 'home/img/6design.png' %}" alt="c6">
+                        <h4 class="py-3">Проект на любом этапе</h4>
+                        <p class="pb-5">Возможность начала сотрудничеству на любом этапе строительства дома.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--END THIRD BLOCK-->
+{% endblock index_block %}
